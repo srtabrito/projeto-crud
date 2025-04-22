@@ -1,17 +1,19 @@
-function Formulario(){
-    return (
-        <form>
-            <h1>Formulário</h1>
+function Formulario() {
+  return (
+    <form>
+      <h1>Formulário</h1>
 
-            <input type="text" placeholder="Nome"/>
-            <input type="text" placeholder="Marca"/>
+      <input className="entrada" type="text" placeholder="Nome" />
+      <input className="entrada" type="text" placeholder="Marca" />
 
-            <input type="button" value="Cadastrar"/>
-            <input type="button" value="Alterar"/>
-            <input type="button" value="Remover"/>
-            <input type="button" value="Cancelar"/>
-        </form>
-    )
+      <div className="container-btn">
+        <input className="btn btn-success" type="button" value="Cadastrar" />
+        <input className="btn btn-dark" type="button" value="Alterar" />
+        <input className="btn btn-danger" type="button" value="Remover" />
+        <input className="btn btn-warning" type="button" value="Cancelar" />
+      </div>
+    </form>
+  );
 }
 
 export default Formulario;
